@@ -1,1 +1,71 @@
 # sovereign-capability-layer
+# Sovereign Capability Layer
+
+A unified, domain-based conversion engine for the TAP‑02 Mesh, Shadow Capsule,
+and BlackCorp Sovereign Digital Ecosystem.
+
+This repository implements a universal `convert()` operation that routes
+requests across capability domains such as color, json, yaml, encode, crypto,
+and more.
+
+## Core Concept
+
+Every operation in the system uses a single JSON pattern:
+
+{
+  "op": "convert",
+  "domain": "<domain>",
+  "from": "<format>",
+  "to": "<format>",
+  "value": "<input>"
+}
+
+The router dispatches the request to the correct domain handler.
+
+## Domains
+
+- color
+- unit
+- sql
+- encode
+- decode
+- base64
+- image
+- json
+- xml
+- html
+- yaml
+- csv
+- string
+- number
+- ip
+- crypto
+- beautify
+- minify
+- validate
+- random
+- parse
+
+## Router
+
+The router reads:
+- op
+- domain
+- from
+- to
+- value
+
+Then routes to the appropriate handler.
+
+## Examples
+
+See the /examples directory for ready-to-run JSON requests.
+
+## Extending
+
+To add a new domain:
+1. Create a handler in /handlers
+2. Add the domain to manifest.json
+3. Export the handler in router/index.js
+
+No architecture changes required.
