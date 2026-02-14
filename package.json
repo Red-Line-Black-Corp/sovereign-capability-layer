@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-capability-layer",
+  "version": "1.0.0",
+  "main": "router/index.js",
+  "description": "Unified conversion engine for TAP‑02 and BlackCorp systems",
+  "license": "MIT"
+}
