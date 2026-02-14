@@ -1,4 +1,3 @@
-# sovereign-capability-layer
 # Sovereign Capability Layer
 
 A unified, domain-based conversion engine for the TAP‑02 Mesh, Shadow Capsule,
@@ -57,10 +56,6 @@ The router reads:
 
 Then routes to the appropriate handler.
 
-## Examples
-
-See the /examples directory for ready-to-run JSON requests.
-
 ## Extending
 
 To add a new domain:
@@ -69,3 +64,4 @@ To add a new domain:
 3. Export the handler in router/index.js
 
 No architecture changes required.
+
