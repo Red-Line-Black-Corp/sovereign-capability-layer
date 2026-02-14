@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "description": "Sovereign Utility Layer Capability Manifest",
+  "unified_op": "convert",
+  "domains": [
+    "color", "unit", "sql", "encode", "decode", "base64",
+    "image", "json", "xml", "html", "yaml", "csv",
+    "string", "number", "ip", "crypto",
+    "beautify", "minify", "validate",
+    "random", "parse"
+  ],
+  "router": {
+    "entrypoint": "convert(domain, from, to, value)",
+    "dispatch_strategy": "route_by_domain",
+    "fallback": "unsupported_operation"
+  }
+}
